@@ -53,49 +53,29 @@ emitter.on("disconnect", function() {
 
 ### #_message
 
+Any raw event from Docker.
+
 ```js
 emitter.on("_message", function(message) {
   console.log("got a message from docker: %j", message);
 });
 ```
 
-### #create
+### Docker events
+
+Events are emitted in a form of `<event.Type>:<event.Action>`.
+
+Full list of events: https://docs.docker.com/reference/api/engine/version/v1.52/#tag/System/operation/SystemEvents
+
+For example:
 
 ```js
-emitter.on("create", function(message) {
+emitter.on("container:create", function(message) {
   console.log("container created: %j", message);
 });
-```
 
-### #start
-
-```js
-emitter.on("start", function(message) {
+emitter.on("container:start", function(message) {
   console.log("container started: %j", message);
-});
-```
-
-### #stop
-
-```js
-emitter.on("stop", function(message) {
-  console.log("container stopped: %j", message);
-});
-```
-
-### #die
-
-```js
-emitter.on("die", function(message) {
-  console.log("container died: %j", message);
-});
-```
-
-### #destroy
-
-```js
-emitter.on("destroy", function(message) {
-  console.log("container destroyed: %j", message);
 });
 ```
 
