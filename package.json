@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Create an event emitter from dockerode's events response",
   "main": "index.js",
+  "engines": {
+    "node": "^22"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/codefresh-io/docker-events.git"
