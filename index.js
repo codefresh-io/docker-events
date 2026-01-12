@@ -31,7 +31,7 @@ DockerEvents.prototype.start = function start() {
 
     parser.on("data", function(data) {
       self.emit("_message", data);
-      self.emit(data.status, data);
+      self.emit(`${data.Type}:${data.Action}`, data);
     });
 
     parser.on("end", function() {

@@ -1,11 +1,19 @@
 {
-  "name": "docker-events",
-  "version": "0.0.2",
+  "name": "@codefresh-io/docker-events",
+  "version": "1.0.0",
   "description": "Create an event emitter from dockerode's events response",
   "main": "index.js",
+  "engines": {
+    "node": "^22"
+  },
+  "scripts": {
+    "lint": "exit 0",
+    "test": "exit 0",
+    "build": "exit 0"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/deoxxa/docker-events.git"
+    "url": "git://github.com/codefresh-io/docker-events.git"
   },
   "keywords": [
     "docker",
@@ -16,9 +24,9 @@
   "author": "Conrad Pankoff <deoxxa@fknsrs.biz> (http://www.fknsrs.biz/)",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/deoxxa/docker-events/issues"
+    "url": "https://github.com/codefresh-io/docker-events/issues"
   },
-  "homepage": "https://github.com/deoxxa/docker-events",
+  "homepage": "https://github.com/codefresh-io/docker-events",
   "dependencies": {
     "jsuck": "0.0.4"
   },
