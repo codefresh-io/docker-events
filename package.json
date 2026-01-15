@@ -4,7 +4,7 @@
   "description": "Create an event emitter from dockerode's events response",
   "main": "index.js",
   "engines": {
-    "node": "^22"
+    "node": "^24"
   },
   "scripts": {
     "lint": "exit 0",
