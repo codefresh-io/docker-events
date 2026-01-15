@@ -1,6 +1,6 @@
 {
   "name": "@codefresh-io/docker-events",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Create an event emitter from dockerode's events response",
   "main": "index.js",
   "engines": {
